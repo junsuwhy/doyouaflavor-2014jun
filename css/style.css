@@ -1,0 +1,248 @@
+/**
+ * 環原
+ */
+body{
+	text-align: center;
+	font-size: 16px;
+	font-family: "Oswald","微軟正黑體",helvetica,arial,sans-serif;
+}
+h1{
+	font-size: 100px;
+	line-height: 100px;
+	display: inline-block;
+}
+h2{
+	font-size: 27px;
+}
+h3{
+	font-size: 17px;
+}
+div{
+	margin:0 auto;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin:0 0 14px;
+}
+
+/**
+ * 重要
+ */
+h1,h2,.each-step,.pos-div{
+	font-family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','HiraMinProN-W3','ＭＳ 明朝','MS Mincho',serif;
+}
+.wrapper{
+	width:960px;
+	margin:0 auto;
+	border-bottom: 40px #000 solid;
+}
+.block{
+	border-top: 5px #000 solid;
+	padding:22px;
+	width:600px;
+}
+.bolder{
+	font-size: 21px;
+	font-weight: bolder;
+}
+.hide{
+	opacity: 0;
+}
+/**
+ * 重要，小螢幕
+ */
+@media (max-width :960px){
+	body .wrapper{
+		width:auto;
+	}
+	body .header{
+		background-repeat-y: inherit ;
+		padding-top:30px;
+		height:auto ;
+		-ms-background-position-x: 50% ;
+		background-position-x: 50% ;
+	}
+	body .block,.three-steps{
+		width:auto ;
+	}
+}
+
+
+/**
+ * 各單元
+ */
+.header{
+	background: url(../img/header.png) no-repeat;
+	/*padding:0px 24px;*/
+	/*background:#000000 ;*/
+	/*line-height: 600px;*/
+	text-align: center;
+	height:624px;
+	position: relative;
+}
+.logo{
+	width:280px;
+	height:280px;
+	position: relative;
+	float:left;
+	margin-top: 100px;
+	/*top: 140px;*/
+}
+.logo.baiwei{
+	margin-left: 130px;
+}
+/*.logo.sanse{
+	right:220px;
+}*/
+.circle{
+	width:280px;
+	height:280px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius:140px;
+	position: absolute;
+	top: -14px;
+	/*left: -46px;*/
+	/*background-color: #fff;*/
+	opacity: 0;
+}
+.logox{
+	background: url(../img/logo2.png) 0 50% no-repeat;
+	width:100px;
+	/*height:100px;*/
+}
+.circle{
+	margin:auto;
+}
+h1{
+	color:#ffffff;
+	padding-bottom: 8px;
+}
+.story{
+	clear:both;
+	/*width:340px;*/
+	color:#ffffff;
+	font-size: 17px;
+	/*margin-left: 0;*/
+}
+
+.three-steps{
+	padding: 29px;
+	width: 600px;
+	margin: 0 auto;
+	display:inline-block;
+}
+.each-step{
+	display:inline-block;
+	font-weight: bolder;
+	font-size: 17px;
+	line-height:24px;
+}
+.block1 .color,.block1 h2{
+	color:#148E81; /*Green*/
+}
+.block1 .color{
+	font-weight: bolder;
+}
+.link>div{
+	display:inline-block;
+	padding: 12px;
+}
+.schedule{
+	border: 1px #333 solid;
+	width: 250px;
+	margin: 15px auto;
+	padding: 15px 10px;
+}
+.start-cook{
+	padding:12px;
+}
+.block2{
+	padding-bottom: 0;
+}
+.block2 h2{
+	color:#DDC724; /*Yellow*/
+}
+.position{
+	/*background: url(../img/where.png) 0 100% no-repeat;*/
+	/*height:160px;*/
+	/*width: 170px;*/
+	/*position: relative;*/
+}
+.need-img{
+	/*position: absolute;*/
+	bottom:0;
+	left:0;
+}
+.block3 h2,.block3 .color{
+	color:#EE612B; /*red*/
+}
+.footer{
+	/*padding:;*/
+}
+/**
+ * 各單元 小螢幕
+ */
+@media (max-width :960px){
+	.logo-wrapper{
+		-webkit-transform: scale(.7);
+				transform: scale(.7);
+				transform-origin: 50% 0;
+		-webkit-transform-origin: 50% 0;
+		height: 420px;
+	}
+	.story{
+		padding-bottom: 20px;
+	}
+	.logo,.logo.baiwei,.logo.sanse{
+		clear: both;
+		margin: 0 auto;
+		float: none;
+	}
+	.logo.baiwei{
+		border-bottom: 5px #fff solid;
+	}
+	.logo.sanse{
+		margin-top:30px;
+	}
+	.logox{
+		display:none;
+	}
+	.each-step{
+		display:block;
+	}
+	.three-steps{
+		width:auto;
+	}
+	.pos-div{
+		display:block;
+	}
+}
+/**
+ * 地圖跟店家
+ */
+.pos-div{
+	display:inline-block;
+	width:260px;
+}
+.text-gyami,.text-gyami a{
+	color:#148E81;
+}
+.text-vegelicia,.text-vegelicia a{
+	color:#DDC724; 
+}
+.text-foodmayor,.text-foodmayor a{
+	color:#EE612B;
+}
+.text-aprils,.text-aprils a{
+	color:#148E81;
+}
+.text-ryou,.text-ryou a{
+	color:#DDC724; 
+}
+.map-box{
+	width:240px;
+	height:160px;
+}
+
